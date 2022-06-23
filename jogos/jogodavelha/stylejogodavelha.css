@@ -1,0 +1,165 @@
+@keyframes pisca {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+}
+
+.backTohome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    position: absolute;
+    margin-left: -1200px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.backTohome a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orangered;
+    margin-top: 50px;
+}
+
+.container {
+    width: 350px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.container .pos1,
+.container .pos2,
+.container .pos4,
+.container .pos5,
+.container .pos7,
+.container .pos8 {
+    border-right: 15px solid white;
+}
+
+.container .pos1,
+.container .pos2,
+.container .pos3,
+.container .pos4,
+.container .pos5,
+.container .pos6 {
+    border-bottom: 15px solid white;
+}
+
+.txt {
+    font-size: 50px;
+    color: orangered;
+}
+
+.choose {
+    display: flex;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.choose div {
+    width: 80px;
+    height: 80px;
+    background-color: orangered;
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.choose div:first-child {
+    background-color: blue;
+}
+
+.choose div:last-child {
+    margin: 0;
+}
+
+.choose div:hover {
+    width: 75px;
+    height: 75px;
+}
+
+.venceu {
+    animation-name: pisca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    color: white;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 270px;
+
+}
+
+.rec {
+    width: 140px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.rec:hover {
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+} 
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/tools/calculadora.css">
+</head>
+<body>
+    <section>
+        <div class="backTohome"><a href="/index.html">VOLTAR</a></div>
+        <div class="container">
+            <div class="title">CALCULADORA</div>
+            <div class="choose">
+                <div>Adi.<br/><input name="calculadora" class="adi" type="radio"></div>
+                <div>Sub.<br/><input name="calculadora" class="sub" type="radio"></div>
+                <div>Multi.<br/><input name="calculadora" class="multi" type="radio"></div>
+                <div>Divi.<br/><input name="calculadora" class="divi" type="radio"></div>
+            </div>
+            <div class="area-valor">
+                <div class="botoes-left">
+                    <div class="botao" onclick="clicarleft('1')">1</div>
+                    <div class="botao" onclick="clicarleft('2')">2</div>
+                    <div class="botao" onclick="clicarleft('3')">3</div>
+                    <div class="botao" onclick="clicarleft('4')">4</div>
+                    <div class="botao" onclick="clicarleft('5')">5</div>
+                    <div class="botao" onclick="clicarleft('6')">6</div>
+                    <div class="botao" onclick="clicarleft('7')">7</div>
+                    <div class="botao" onclick="clicarleft('8')">8</div>
+                    <div class="botao" onclick="clicarleft('9')">9</div>
+                    <div class="botao" onclick="clicarleft('0')">0</div>
+                </div>
+                <input type="number" name="" class="num1" id="num1">
+                <div class="x"></div>
+                <input type="number" name="" class="num2" id="num2"><br/>
+                <div class="botoes-right">
+                    <div class="botao" onclick="clicarright('1')">1</div>
+                    <div class="botao" onclick="clicarright('2')">2</div>
+                    <div class="botao" onclick="clicarright('3')">3</div>
+                    <div class="botao" onclick="clicarright('4')">4</div>
+                    <div class="botao" onclick="clicarright('5')">5</div>
+                    <div class="botao" onclick="clicarright('6')">6</div>
+                    <div class="botao" onclick="clicarright('7')">7</div>
+                    <div class="botao" onclick="clicarright('8')">8</div>
+                    <div class="botao" onclick="clicarright('9')">9</div>
+                    <div class="botao" onclick="clicarright('0')">0</div>
+                </div>
+            </div>
+            <button class="calc">Calcular</button>
+            <div>RESULTADO: </div>
+            <div class="res"></div>
+        </div>
+    </section>
+    <script src="/tools/calculadora.js"></script>
+</body>
+</html>

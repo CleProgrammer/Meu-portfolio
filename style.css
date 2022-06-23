@@ -103,7 +103,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('/images/slider-principal.png');
+    background-image: url('./images/slider-principal.png');
 }
 
 .slider-principal-logo {

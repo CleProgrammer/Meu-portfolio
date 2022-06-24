@@ -117,9 +117,6 @@ a {
     width: 80%;
 }
 
-
-
-
 .slider .slider--width .slider-principal {
     display: flex;
     flex-direction: column;
@@ -151,9 +148,6 @@ a {
     transition: 1s;
 }
 
-
-
-
 .slider .slider--width .slider--item{
     height: 500px;
     background-size: cover;
@@ -166,9 +160,6 @@ a {
     height: 600px;
     margin-left: 50px;
 }
-
-
-
 
 .slider--controls {
     display: flex;
@@ -332,9 +323,6 @@ a {
     cursor: pointer;
 }
 
-
-
-
 .flip {
     transform: rotateY(180deg);
 }
@@ -406,7 +394,6 @@ a {
     line-height: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 
 

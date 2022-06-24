@@ -59,8 +59,6 @@ function loopWrite() {
 
 
 
-
-
 /*Escolher Slide*/
 function clearToggle() {
     let all = document.querySelectorAll('#slide')
@@ -96,14 +94,6 @@ function slide(e) {
             break
     }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -184,7 +174,6 @@ c('.backtoBox1').addEventListener('click', ()=>{
 
 
 
-
 /*Modal Imagem Grande*/
 
 let all = document.querySelectorAll('#cert-bigModal--img')
@@ -205,13 +194,3 @@ c('.buttonClose').addEventListener('click', ()=>{
     c('.modal-img--cert').style.display = 'none'
     c('.modal-img--cert img').remove()
 })
-
-
-
-
-
-/* Jogo da Velha */
-
-
-
-/*outra coisa*/

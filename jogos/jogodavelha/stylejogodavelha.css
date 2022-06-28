@@ -163,3 +163,149 @@ body {
     font-size: 17px;
 } 
 
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        margin-left: -200px;
+        margin-top: -50px;
+        margin: auto;
+    }
+
+    .container {
+        width: 250px;
+        height: 200px;
+        margin-top: -20px;
+    }
+
+    .container div {
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    .container .pos1,
+    .container .pos2,
+    .container .pos4,
+    .container .pos5,
+    .container .pos7,
+    .container .pos8 {
+        border-right: 10px solid white;
+    }
+
+    .container .pos1,
+    .container .pos2,
+    .container .pos3,
+    .container .pos4,
+    .container .pos5,
+    .container .pos6 {
+        border-bottom: 10px solid white;
+    }
+
+    .venceu {
+        width: 100px;
+        display: flex;
+        text-align: center;
+        margin-left: -440px;
+        margin-top: 170px;
+        font-size: 30px;
+    }
+
+    .rec {
+        margin-left: 500px;
+        margin-top: 55px;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .backTohome {
+        margin-left: -500px;
+        margin-top: 55px;
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+
+/*Large Mobile*/
+@media (max-width: 425px) {
+    body {
+        margin-left: -200px;
+        margin-top: -50px;
+        margin: auto;
+    }
+
+    .title {
+        margin-top: 70px;
+    }
+
+    .container {
+        width: 250px;
+        height: 200px;
+        margin-top: -20px;
+    }
+
+    .container div {
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    .container .pos1,
+    .container .pos2,
+    .container .pos4,
+    .container .pos5,
+    .container .pos7,
+    .container .pos8 {
+        border-right: 10px solid white;
+    }
+
+    .container .pos1,
+    .container .pos2,
+    .container .pos3,
+    .container .pos4,
+    .container .pos5,
+    .container .pos6 {
+        border-bottom: 10px solid white;
+    }
+
+    .venceu {
+        width: 100px;
+        display: flex;
+        text-align: center;
+        margin-left: -80px;
+        margin-top: 470px;
+        font-size: 40px;
+    }
+
+    .rec {
+        margin-left: 240px;
+        margin-top: 10px;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .backTohome {
+        margin-left: -250px;
+        margin-top: 10px;
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .rec {
+        margin-left: 150px;
+        font-size: 12px;
+    }
+
+    .backTohome {
+        margin-left: -180px;
+    }
+}

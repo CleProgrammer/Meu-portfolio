@@ -89,12 +89,11 @@ a {
     width: 80vw;
     overflow: hidden;
     margin: auto;
-    /*margin-top: 70px;*/
 }
 
 .slider .slider--width {
     display: flex;
-    width: calc(100vw * 4);
+    width: calc(100vw * 5);
     transition: 2s;
 }
 
@@ -144,7 +143,6 @@ a {
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     opacity: 0;
-    /*display: none;*/
     transition: 1s;
 }
 
@@ -159,6 +157,13 @@ a {
     width: 1000px;
     height: 600px;
     margin-left: 50px;
+}
+
+.slider .slider--width #item2 video{
+    width: 880px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 100px;
 }
 
 .slider--controls {

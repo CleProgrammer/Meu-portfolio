@@ -62,7 +62,7 @@ function loopWrite() {
 /*Escolher Slide*/
 function clearToggle() {
     let all = document.querySelectorAll('#slide')
-    for(let i = 3;i >= 0;i--) {
+    for(let i = 4;i >= 0;i--) {
         all[i].classList.remove('slideBackground')
     }
 }
@@ -92,6 +92,12 @@ function slide(e) {
             c('.slider .slider--width').style.marginLeft = '-300vw'
             c(`.${e}`).classList.toggle('slideBackground')
             break
+        
+        case 'slide5':
+            clearToggle()
+            c('.slider .slider--width').style.marginLeft = '-400vw'
+            c(`.${e}`).classList.toggle('slideBackground')
+            break
     }
 }
 
@@ -106,16 +112,9 @@ c('.screen').addEventListener('click', ()=>{
     c('.header-right .jogosModal').style.display = 'none'
 })
 
-/*c('.header-right .menu.jogos').addEventListener('mouseout', ()=>{
-    c('.header-right .jogosModal').style.display = 'none'
-})*/
-
-
 
 /*Section Informações*/
 c('.box1').addEventListener('click', ()=>{
-    //c('.box-modal').style.display = 'block'
-
     c('.box1').classList.toggle('flip')
     c('.box1').style.opacity = '0'
 
@@ -175,7 +174,6 @@ c('.backtoBox1').addEventListener('click', ()=>{
 
 
 /*Modal Imagem Grande*/
-
 let all = document.querySelectorAll('#cert-bigModal--img')
 
 let atualwidth = document.body.clientHeight

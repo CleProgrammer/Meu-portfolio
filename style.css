@@ -599,6 +599,7 @@ footer {
 }
 
 
+/*TABLET*/
 @media (min-width: 426px) and (max-width: 768px) {
     .header-principal {
         height: 100px;
@@ -1255,5 +1256,61 @@ footer {
     
     .div-footer .footer-social-media:hover {
         border: 1px solid rgb(0, 94, 172);
+    }
+}
+
+/*MOBILE M*/
+@media (max-width: 375px) {
+    .section2 {
+        margin-bottom: 130px;
+    }
+}
+
+/*MOBILE S*/
+@media (max-width: 320px) {
+    .slider .slider--width .slider-principal .slider-principal--title{
+        width: 300px;
+        font-size: 20px;
+        margin-top: -200px;
+        margin-left: 120px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .slider .slider--width .slider-principal .slider-principal--sub-title{
+        width: 600px;
+        font-size: 14px;
+        color: rgb(0, 119, 255);
+        margin-left: 120px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        opacity: 0;
+        /*display: none;*/
+        transition: 1s;
+    }
+
+    .slider--controls {
+        margin-left: 100px;
+        margin-top: -230px;
+    }
+
+    .section2 {
+        margin-bottom: 300px;
+    }
+
+    .box1 {
+        margin-bottom: 20px;
+    }
+
+    .section2 .section-desc .underline-about-me {
+        margin-left: 0px;
+        position: absolute;
+        margin-top: 106px;
+        margin-left: 120px;
+    }
+
+    .contact-footer {
+        display: none;
     }
 }

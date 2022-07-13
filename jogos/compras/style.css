@@ -28,8 +28,10 @@ a {
 }
 
 .principal #box {
-    width: 300px;
-    height: 250px;
+    width: 22vw;
+    height: 38vh;
+    /*width: 300px;
+    height: 250px;*/
     background-color: rgb(245, 245, 245);
     display: flex;
     flex-direction: column;
@@ -44,8 +46,8 @@ a {
     border-radius: 50%;
     background-color: orangered;
     position: absolute;
-    margin-top: -250px;
-    margin-left: 20px;
+    margin-top: -38vh;
+    margin-left: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +266,6 @@ a {
     position: absolute;
     margin-left: -400px;
     display: none;
-    background-color: gray;
 }
 
 .close-block-products {
@@ -309,7 +310,8 @@ a {
     flex-wrap: wrap;
     color: white;
     background-color: rgb(0, 0, 0);
-    width: 546px;
+    width: 40vw;
+    /*width: 546px;*/
     height: 100vh;
     padding: 40px 0px;
     transition: all ease 0.5s;
@@ -317,9 +319,11 @@ a {
 }
 
 .modal-cart .modal {
-    width: 175px;
+    width: 12vw;
+    height: 17vh;
+    /*width: 175px;
     height: 120px;
-    padding: 10px;
+    padding: 10px;*/
     background-color: orangered;
     border: 2px solid white;
     box-shadow: none;
@@ -343,10 +347,10 @@ a {
 .modal-cart .modal .modal-soma {
     display: flex;
     justify-content: space-around;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 3vw;
+    margin-top: 3vh;
     height: 0px;
-    width: 80px;
+    width: 6vw;
 }
 
 .modal-cart .modal .modal-preco-R {
@@ -362,22 +366,24 @@ a {
     font-size: 18px;
     padding: 3px;
     background-color: white;
-    margin-top: 110px;
+    margin-top: 14vh;
 }
 
 .modal-cart .modal .modal-mais, 
 .modal-cart .modal .modal-menos,
 .modal-cart .modal .modal-quant {
-    margin-top: 110px;
+    margin-top: 14vh;
+    width: 2vw;
+    height: 3vh;
 }
 
 .modal-cart .modal .close-modal {
     width: 20px;
     height: 20px;
     font-size: 15px;
-    margin-top: -83px;
+    margin-top: -11vh;
     background-color: white;
-    margin-left: -6px;
+    margin-left: -1vw;
     color: orangered;
     position: inherit;
 }
@@ -426,10 +432,10 @@ a {
 }
 
 .modal-cart .cart-preco-total {
-    font-size: 30px;
+    font-size: 2vw;
     width: 300px;
     margin-top: 450px;
-    margin-left: 55px;
+    margin-left: 60px;
     position: absolute;
 }
 
@@ -440,4 +446,258 @@ a {
     font-size: 50px;
     font-weight: bold;
     color: white;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .modal-cart .modal .close-modal {
+        margin-top: -83px;
+        margin-left: -15px;
+    }
+
+    .modal-cart .modal .desc,
+    .modal-cart .modal img {
+        margin-top: -15px;
+    }
+}
+
+/*TABLET:*/
+@media (min-width: 426px) and (max-width: 768px) {
+    .principal div .adic-car {
+        width: 40px;
+        height: 40px;
+    }
+
+    .principal div img {
+        margin-top: -10px;
+    }
+
+    .principal .desc {
+        font-size: 15px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    .modal-cart {
+        padding-top: 100px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .modal-cart::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    .modal-cart .modal {
+        width: 25vw;
+        height: 30vh;
+    }
+
+    .modal-cart .modal .close-modal {
+        margin-top: -115px;
+        margin-left: -15px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .modal-cart .modal img {
+        margin-top: -50px;
+        width: 130px;
+    }
+
+    .modal-cart .modal .desc {
+        font-size: 12px;
+    }
+
+    .modal-cart .modal .modal-soma {
+        margin-top: 70px;
+        margin-left: 40px;
+        width: 70%;
+    }
+
+    .modal-cart .modal .modal-mais, 
+    .modal-cart .modal .modal-menos,
+    .modal-cart .modal .modal-quant {
+        width: 3vw;
+        height: 3vh;
+    }
+
+    .block-products {
+        margin-left: 180px;
+    }
+
+    .cart-buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        margin-top: -100px;
+        margin-left: 0px;
+        position: absolute;
+        background-color: black;
+        height: 100px;
+        padding: 10px;
+
+    }
+    
+    .modal-cart .cart-preco-total {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: -30px;
+        margin-left: 15px;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+/*LARGE MOBILE:*/
+@media (max-width: 425px) {
+    .principal {
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .principal::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    .principal #box {
+        width: 200px;
+        height: 220px;
+        margin-top: 30px;
+    }
+
+    .principal div .adic-car {
+        width: 40px;
+        height: 40px;
+        margin-top: -40px;
+        position: relative;
+    }
+
+    .principal div img {
+        margin-top: -40px;
+    }
+
+    .principal .desc {
+        font-size: 15px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .modal {
+        width: 90%;
+        height: 300px;
+    }
+
+    .modal .close-modal {
+        width: 60px;
+        height: 60px;
+        margin-top: -200px;
+        margin-left: -35px;
+        font-size: 40px;
+    }
+
+    .modal-cart {
+        padding-top: 100px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 200px;
+    }
+
+    .modal-cart::-webkit-scrollbar {
+        background-color: transparent;
+    }
+    
+
+    .modal-cart .modal {
+        width: 25vw;
+        height: 30vh;
+    }
+
+    .modal-cart .modal .close-modal {
+        margin-top: -105px;
+        margin-left: -15px;
+        width: 20px;
+        height: 20px;
+        font-size: 17px;
+    }
+
+    .modal-cart .modal img {
+        margin-left: -10px;
+        margin-top: -30px;
+        width: 80px;
+    }
+
+    .modal-cart .modal .desc {
+        font-size: 10px;
+    }
+
+    .modal-cart .modal .modal-soma {
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+
+    .modal-cart .modal .modal-soma .modal-preco-R {
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .modal-cart .modal .modal-mais {
+        margin-top: 60px;
+        width: 20px;
+    }
+
+    .modal-cart .modal .modal-menos {
+        margin-top: 60px;
+        width: 20px;
+        margin-left: -60px;
+    }
+
+    .modal-cart .modal .modal-quant {
+        margin-top: 60px;
+        width: 20px;
+    }
+
+    .block-products {
+        margin-left: 180px;
+    }
+
+    .cart-buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        margin-top: -100px;
+        margin-left: 0px;
+        font-size: 12px;
+        background-color: black;
+        height: 100px;
+        padding: 10px;
+    }
+    
+    .modal-cart .cart-preco-total {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: -30px;
+        margin-left: 11px;
+        z-index: 1;
+    }
+
+    .principal-box-block {
+        position: fixed;
+    }
+
+    .close-block-products {
+        width: 60px;
+        height: 40px;
+    }
+
+    .text-block-products {
+        margin-left: -30px;
+    }
+
+    .block-products {
+        margin-left: 550px;
+        width: 30%;
+        height: 250px;
+        opacity: 100%;
+    }
 }
